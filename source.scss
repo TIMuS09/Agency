@@ -317,6 +317,9 @@ body {
 
 @media (max-width:1225px){
     .programmer {
+        &__inner {
+            overflow: hidden;
+        }
         &__man {
             right: -200px;
         }
@@ -333,6 +336,7 @@ body {
                 padding: 57px 0px 57px 63px;
             }
         &__info {
+            max-width: 620px;
             h1 {
                 font-size: 32px;
             }
@@ -414,15 +418,14 @@ body {
     .programmer {
         &__inner {
             padding: 34px 10px 30px 10px;
+            max-width: 300px;
         }
         h1 {
-            width: 294px;
             font-size: 22px;
             line-height: 33px;
             text-align: center;
         }
         p {
-            width: 300px;
             text-align: center;
             font-size: 13px;
             line-height: 20px;

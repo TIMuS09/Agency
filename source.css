@@ -381,6 +381,9 @@ body.lock {
 }
 
 @media (max-width: 1225px) {
+  .programmer__inner {
+    overflow: hidden;
+  }
   .programmer__man {
     right: -200px;
   }
@@ -393,6 +396,9 @@ body.lock {
   }
   .programmer__inner {
     padding: 57px 0px 57px 63px;
+  }
+  .programmer__info {
+    max-width: 620px;
   }
   .programmer__info h1 {
     font-size: 32px;
@@ -472,15 +478,14 @@ body.lock {
   }
   .programmer__inner {
     padding: 34px 10px 30px 10px;
+    max-width: 300px;
   }
   .programmer h1 {
-    width: 294px;
     font-size: 22px;
     line-height: 33px;
     text-align: center;
   }
   .programmer p {
-    width: 300px;
     text-align: center;
     font-size: 13px;
     line-height: 20px;
