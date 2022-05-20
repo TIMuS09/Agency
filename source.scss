@@ -326,6 +326,7 @@ body {
 @media (max-width:1024px) {
     .container {
         max-width: 962px;
+        width: 100%;
     }
     .programmer {
             &__inner {
@@ -401,6 +402,7 @@ body {
 @media (max-width:320px) {
     .container {
         max-width: 300px;
+        width: 100%;
     }
     .header__inner {
         padding: 11px 0 15px 21px;
