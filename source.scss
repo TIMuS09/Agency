@@ -321,12 +321,12 @@ body {
             overflow: hidden;
         }
         &__man {
-            right: -200px;
+            right: -210px;
         }
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:992px) {
     .container {
         max-width: 962px;
         width: 100%;
@@ -334,14 +334,16 @@ body {
     .programmer {
             &__inner {
                 padding: 57px 0px 57px 63px;
+                overflow: auto;
             }
         &__info {
-            max-width: 620px;
             h1 {
                 font-size: 32px;
+                max-width: 500px;
             }
             p {
                 font-size: 15px;
+                max-width: 500px;
             }
             &::after {
                 display: none;
@@ -362,7 +364,47 @@ body {
     }
 }
 
-@media (max-width:1024px) {
+@media (max-width:768px) {
+    .container {
+        max-width: 780px;
+        width: 100%;
+    }
+    .header__inner {
+        padding: 11px 0 15px 21px;
+    }
+    .header__logo {
+        font-size: 25px;
+        line-height: 38px;
+    }
+    .programmer {
+        &__inner {
+            padding: 34px 10px 30px 10px;
+        }
+        h1 {
+            font-size: 22px;
+            line-height: 33px;
+            text-align: center;
+            max-width: 300px;
+        }
+        p {
+            text-align: center;
+            font-size: 13px;
+            line-height: 20px;
+            max-width: 300px;
+        }
+        &__info-buttons {
+            div:first-child {
+                margin-right: 12px;
+                font-size: 12px;
+                padding: 9px 39px;
+            }
+            div:last-child {
+                font-size: 12px;
+                padding: 9px 39px;
+            }
+        }
+    }
+
     .header__menu-list,
     .header__menu-button{
         display: none;
@@ -400,46 +442,5 @@ body {
     }
     .header__burger:after {
         bottom: 0;
-    }
-}
-
-@media (max-width:320px) {
-    .container {
-        max-width: 300px;
-        width: 100%;
-    }
-    .header__inner {
-        padding: 11px 0 15px 21px;
-    }
-    .header__logo {
-        font-size: 25px;
-        line-height: 38px;
-    }
-    .programmer {
-        &__inner {
-            padding: 34px 10px 30px 10px;
-            max-width: 300px;
-        }
-        h1 {
-            font-size: 22px;
-            line-height: 33px;
-            text-align: center;
-        }
-        p {
-            text-align: center;
-            font-size: 13px;
-            line-height: 20px;
-        }
-        &__info-buttons {
-            div:first-child {
-                margin-right: 12px;
-                font-size: 12px;
-                padding: 9px 39px;
-            }
-            div:last-child {
-                font-size: 12px;
-                padding: 9px 39px;
-            }
-        }
     }
 }

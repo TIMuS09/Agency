@@ -385,26 +385,26 @@ body.lock {
     overflow: hidden;
   }
   .programmer__man {
-    right: -200px;
+    right: -210px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 992px) {
   .container {
     max-width: 962px;
     width: 100%;
   }
   .programmer__inner {
     padding: 57px 0px 57px 63px;
-  }
-  .programmer__info {
-    max-width: 620px;
+    overflow: auto;
   }
   .programmer__info h1 {
     font-size: 32px;
+    max-width: 500px;
   }
   .programmer__info p {
     font-size: 15px;
+    max-width: 500px;
   }
   .programmer__info::after {
     display: none;
@@ -423,7 +423,42 @@ body.lock {
   }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
+  .container {
+    max-width: 780px;
+    width: 100%;
+  }
+  .header__inner {
+    padding: 11px 0 15px 21px;
+  }
+  .header__logo {
+    font-size: 25px;
+    line-height: 38px;
+  }
+  .programmer__inner {
+    padding: 34px 10px 30px 10px;
+  }
+  .programmer h1 {
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    max-width: 300px;
+  }
+  .programmer p {
+    text-align: center;
+    font-size: 13px;
+    line-height: 20px;
+    max-width: 300px;
+  }
+  .programmer__info-buttons div:first-child {
+    margin-right: 12px;
+    font-size: 12px;
+    padding: 9px 39px;
+  }
+  .programmer__info-buttons div:last-child {
+    font-size: 12px;
+    padding: 9px 39px;
+  }
   .header__menu-list,
   .header__menu-button {
     display: none;
@@ -461,43 +496,6 @@ body.lock {
   }
   .header__burger:after {
     bottom: 0;
-  }
-}
-
-@media (max-width: 320px) {
-  .container {
-    max-width: 300px;
-    width: 100%;
-  }
-  .header__inner {
-    padding: 11px 0 15px 21px;
-  }
-  .header__logo {
-    font-size: 25px;
-    line-height: 38px;
-  }
-  .programmer__inner {
-    padding: 34px 10px 30px 10px;
-    max-width: 300px;
-  }
-  .programmer h1 {
-    font-size: 22px;
-    line-height: 33px;
-    text-align: center;
-  }
-  .programmer p {
-    text-align: center;
-    font-size: 13px;
-    line-height: 20px;
-  }
-  .programmer__info-buttons div:first-child {
-    margin-right: 12px;
-    font-size: 12px;
-    padding: 9px 39px;
-  }
-  .programmer__info-buttons div:last-child {
-    font-size: 12px;
-    padding: 9px 39px;
   }
 }
 /*# sourceMappingURL=source.css.map */
