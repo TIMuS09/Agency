@@ -201,8 +201,6 @@ body {
             }
         }
         p {
-            position: relative;
-            z-index: 30;
             font-size: 16px;
             line-height: 24px;
             color: #5C5C5C;
@@ -344,6 +342,12 @@ body {
             }
             p {
                 font-size: 15px;
+            }
+            &::after {
+                display: none;
+            }
+            &::before {
+                display: none;
             }
         }
         &__field {
