@@ -253,7 +253,6 @@ body {
         right: 40px;
         top: 10px;
     }
-
     // &__info::before {
     //     content: '';
     //     display: block;
@@ -267,7 +266,6 @@ body {
     //     right: 0;
     //     top: -100px;
     // }
-
     &__man {
         position: absolute;
         right: 50px;
@@ -319,9 +317,6 @@ body {
 
 @media (max-width:1225px){
     .programmer {
-        &__field {
-            right: -200px;
-        }
         &__man {
             right: -200px;
         }
@@ -330,7 +325,7 @@ body {
 
 @media (max-width:1024px) {
     .container {
-        width: 962px;
+        max-width: 962px;
     }
     .programmer {
             &__inner {
@@ -350,15 +345,11 @@ body {
                 display: none;
             }
         }
-        &__field {
+        &__man {
+        display: none;
+        img {
             display: none;
         }
-        &__man {
-            width: 500px;
-            height: 500px;
-            img {
-                display: none;
-            }
         }
     }
     .product {
@@ -409,7 +400,7 @@ body {
 
 @media (max-width:320px) {
     .container {
-        width: 300px;
+        max-width: 300px;
     }
     .header__inner {
         padding: 11px 0 15px 21px;

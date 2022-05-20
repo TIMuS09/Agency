@@ -381,9 +381,6 @@ body.lock {
 }
 
 @media (max-width: 1225px) {
-  .programmer__field {
-    right: -200px;
-  }
   .programmer__man {
     right: -200px;
   }
@@ -391,7 +388,7 @@ body.lock {
 
 @media (max-width: 1024px) {
   .container {
-    width: 962px;
+    max-width: 962px;
   }
   .programmer__inner {
     padding: 57px 0px 57px 63px;
@@ -408,12 +405,8 @@ body.lock {
   .programmer__info::before {
     display: none;
   }
-  .programmer__field {
-    display: none;
-  }
   .programmer__man {
-    width: 500px;
-    height: 500px;
+    display: none;
   }
   .programmer__man img {
     display: none;
@@ -466,7 +459,7 @@ body.lock {
 
 @media (max-width: 320px) {
   .container {
-    width: 300px;
+    max-width: 300px;
   }
   .header__inner {
     padding: 11px 0 15px 21px;
