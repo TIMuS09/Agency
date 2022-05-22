@@ -86,6 +86,7 @@ body.lock {
 
 .container {
   max-width: 1388px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -130,41 +131,52 @@ body.lock {
   color: #1090CB;
 }
 
+.header__logo:hover {
+  transform: translate(0, -10px);
+}
+
 .header__menu {
   display: flex;
   align-items: center;
 }
 
-.header__menu-list-item {
+.header__menu-list {
   display: flex;
 }
 
-.header__menu-list-item a {
+.header__menu-list a {
   font-size: 16px;
   line-height: 24px;
   color: #000000;
 }
 
-.header__menu-list-item li:first-child {
+.header__menu-list li:first-child {
   margin-right: 83px;
 }
 
-.header__menu-list-item li:nth-child(2), .header__menu-list-item li:nth-child(4) {
+.header__menu-list li:nth-child(2), .header__menu-list li:nth-child(4) {
   margin-right: 71px;
 }
 
-.header__menu-list-item li:nth-child(3) {
+.header__menu-list li:nth-child(3) {
   margin-right: 61px;
 }
 
-.header__menu-button {
-  padding: 10px 32px;
+.header__menu-button a {
   background-color: #1090CB;
   border-radius: 6px;
   font-size: 13px;
   line-height: 20px;
   color: #ffff;
   display: inline-block;
+}
+
+.header__menu-button a {
+  padding: 10px 32px;
+}
+
+.header__menu-button:hover a {
+  background-color: #1379a8;
 }
 
 .header__menu-mobile {
@@ -176,11 +188,10 @@ body.lock {
   width: 100%;
   height: 100%;
   background-color: #E4F3FA;
-  transition: 5s;
   overflow: hidden;
 }
 
-.header__menu-mobile .header__menu-list-phone {
+.header__menu-mobile .header__menu-mobile-phone {
   display: flex;
   width: 100%;
   height: 100%;
@@ -195,13 +206,13 @@ body.lock {
   margin-top: 25px;
 }
 
-.header__menu-list-item-phone li,
-.header__menu-list-item li {
+.header__menu-mobile-phone-list li,
+.header__menu-list li {
   position: relative;
 }
 
-.header__menu-list-item-phone li::before,
-.header__menu-list-item li::before {
+.header__menu-mobile-phone-list li::before,
+.header__menu-list li::before {
   display: none;
   content: '';
   height: 8px;
@@ -213,15 +224,15 @@ body.lock {
   top: -1px;
 }
 
-.header__menu-list-item-phone li:hover::before, .header__menu-list-item-phone li.active::before,
-.header__menu-list-item li:hover::before,
-.header__menu-list-item li.active::before {
+.header__menu-mobile-phone-list li:hover::before, .header__menu-mobile-phone-list li.active::before,
+.header__menu-list li:hover::before,
+.header__menu-list li.active::before {
   display: block;
 }
 
-.header__menu-list-item-phone li:hover a, .header__menu-list-item-phone li.active a,
-.header__menu-list-item li:hover a,
-.header__menu-list-item li.active a {
+.header__menu-mobile-phone-list li:hover a, .header__menu-mobile-phone-list li.active a,
+.header__menu-list li:hover a,
+.header__menu-list li.active a {
   color: #1090CB;
 }
 
@@ -259,41 +270,49 @@ body.lock {
   display: flex;
 }
 
-.programmer__info-buttons div:first-child {
-  padding: 10px 32px;
+.programmer__info-buttons div:first-child a {
   background-color: #1090CB;
   border-radius: 6px;
   font-size: 13px;
   line-height: 20px;
   color: #ffff;
   display: inline-block;
-  border-radius: 10px;
-  padding: 13px 56.5px;
-  display: inline-block;
-  font-size: 16px;
-  line-height: 24px;
-  margin-right: 15px;
 }
 
-.programmer__info-buttons div:last-child {
-  padding: 10px 32px;
-  background-color: #1090CB;
-  border-radius: 6px;
-  font-size: 13px;
-  line-height: 20px;
-  color: #ffff;
-  display: inline-block;
-  background-color: #fff;
-  border: 1px solid #1090CB;
+.programmer__info-buttons div:first-child a {
+  margin-right: 15px;
   border-radius: 10px;
-  padding: 13px 57px;
-  display: inline-block;
+  padding: 13.5px 56.5px;
   font-size: 16px;
   line-height: 24px;
+}
+
+.programmer__info-buttons div:first-child:hover a {
+  background-color: #1379a8;
 }
 
 .programmer__info-buttons div:last-child a {
+  background-color: #1090CB;
+  border-radius: 6px;
+  font-size: 13px;
+  line-height: 20px;
+  color: #ffff;
+  display: inline-block;
+}
+
+.programmer__info-buttons div:last-child a {
+  background-color: #fff;
+  border: 1px solid #1090CB;
+  border-radius: 10px;
+  padding: 12.5px 57px;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 24px;
   color: #1090CB;
+}
+
+.programmer__info-buttons div:last-child:hover a {
+  background-color: #03030330;
 }
 
 .programmer__info::after {
@@ -390,13 +409,13 @@ body.lock {
 }
 
 @media (max-width: 992px) {
-  .container {
-    max-width: 950px;
+  .header__inner {
+    padding: 11px 0 15px 0;
   }
-  .header__menu-list-item li:nth-child(1),
-  .header__menu-list-item li:nth-child(2),
-  .header__menu-list-item li:nth-child(3),
-  .header__menu-list-item li:nth-child(4) {
+  .header__menu-list li:nth-child(1),
+  .header__menu-list li:nth-child(2),
+  .header__menu-list li:nth-child(3),
+  .header__menu-list li:nth-child(4) {
     margin-right: 40px;
   }
   .programmer__inner {
@@ -437,12 +456,8 @@ body.lock {
 }
 
 @media (max-width: 768px) {
-  .container {
-    max-width: 780px;
-    width: 100%;
-  }
   .header__inner {
-    padding: 11px 0 15px 21px;
+    padding: 11px 0 10px 0;
   }
   .header__logo {
     font-size: 25px;
@@ -465,13 +480,13 @@ body.lock {
     font-size: 13px;
     line-height: 20px;
   }
-  .programmer__info-buttons div:first-child {
+  .programmer__info-buttons div:first-child a {
     margin-right: 12px;
     font-size: 12px;
     padding: 9.5px 39px;
     white-space: nowrap;
   }
-  .programmer__info-buttons div:last-child {
+  .programmer__info-buttons div:last-child a {
     font-size: 12px;
     padding: 8.5px 39.2px;
     white-space: nowrap;
