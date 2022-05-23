@@ -40,11 +40,3 @@ buttonBurger.addEventListener('click', (event) => {
 })
 
 
-
-
-
-// крест на крест
-// сменить if на classList.toggle
-// scroll убрать
-// специфичность прочитать
-// создать вторую страницу
