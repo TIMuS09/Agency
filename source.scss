@@ -69,6 +69,42 @@ body {
             }
         }
     }
+    &__burger-inner {
+        padding: 15px;
+        background: rgba(16, 144, 203, 0.1);
+        border-radius: 50%;
+        display: none;
+    }
+    &__burger {
+        display: block;
+        position: relative;
+        width: 20px;
+        height: 20px;
+        & span {
+            position: absolute;
+            background-color: black;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            top: 9px;
+        }
+        &:before,
+        &:after {
+            content: '';
+            background-color: black;
+                position: absolute;
+            width: 100%;
+            height: 2px;
+            left: 0;
+            transition: 0.5s;
+        }
+        &:before {
+            top: 0;
+        }
+        &:after {
+            bottom: 0;
+        }
+    }
     &__logo {
         a {
             font-weight: 700;
@@ -78,6 +114,7 @@ body {
         }
         &:hover {
             transform: translate(0,-10px);
+            transition: 1s;
         }
     }
     &__menu {
@@ -90,14 +127,8 @@ body {
                 line-height: 24px;
                 color: #000000;
             }
-            li:first-child {
-                margin-right: 83px;
-            }
-            li:nth-child(2), li:nth-child(4) {
-                margin-right: 71px;
-            }
-            li:nth-child(3) {
-                margin-right: 61px;
+            li {
+                margin-right: 70px;
             }
         }
         &-button {
@@ -121,7 +152,7 @@ body {
             height: 100%;
             background-color: #E4F3FA;
             overflow: hidden;
-            .header__menu-mobile-phone {
+            nav {
                 display: flex;
                 width: 100%;
                 height: 100%;
@@ -138,10 +169,14 @@ body {
     }
 }
 
-.header__menu-mobile-phone-list,
+.header__menu-mobile-list,
 .header__menu-list {
     li {
         position: relative;
+        a {
+            color: #000000;
+            transition: 0.5s;
+        }
         &::before {
             display: none;
             content: '';
@@ -166,7 +201,7 @@ body {
 }
 
 // li,
-// .header__menu-mobile-phone-list li {
+// .header__menu-mobile-list li {
     // position: relative;
     // &::before {
     //     display: none;
@@ -351,13 +386,8 @@ body {
     .header__inner {
         padding: 11px 0 15px 0;
     }
-    .header__menu-list {
-        li:nth-child(1),
-        li:nth-child(2),
-        li:nth-child(3),
-        li:nth-child(4) {
-            margin-right: 40px;
-        }
+    .header__menu-list li {
+        margin-right: 40px;
     }
     .programmer {
             &__inner {
@@ -401,11 +431,16 @@ body {
 @media (max-width:768px) {
     .header {
         &__inner {
-            padding: 11px 0 10px 0;
+            padding: 7px 0 7px 0;
         }
         &__logo {
-            font-size: 25px;
-            line-height: 38px;
+            a {
+                font-size: 25px;
+                line-height: 38px;
+            }
+        }
+        &__burger-inner {
+            display: block;
         }
     }
     .programmer {
@@ -444,43 +479,8 @@ body {
             }
         }
     }
-
     .header__menu-list,
     .header__menu-button{
         display: none;
-    }
-    .header__burger-inner {
-        padding: 15px;
-        background: rgba(16, 144, 203, 0.1);
-        border-radius: 50%;
-    }
-    .header__burger {
-        display: block;
-        position: relative;
-        width: 20px;
-        height: 20px;
-    }
-    .header__burger span {
-        position: absolute;
-        background-color: black;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        top: 9px;
-    }
-    .header__burger:before,
-    .header__burger:after {
-        content: '';
-        background-color: black;
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        left: 0;
-    }
-    .header__burger:before {
-        top: 0;
-    }
-    .header__burger:after {
-        bottom: 0;
     }
 }
