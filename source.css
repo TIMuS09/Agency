@@ -431,7 +431,7 @@ body.lock {
 }
 
 .product__inner {
-  padding: 43px 70px 43px 81px;
+  padding: 43px 70px 3px 81px;
 }
 
 .product .title {
@@ -449,12 +449,13 @@ body.lock {
 .product .block {
   display: flex;
   align-items: center;
+  margin-bottom: 40px;
   width: 300px;
 }
 
 .product__apps {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -643,6 +644,12 @@ body.lock {
   border-bottom: 0.7px solid #C7C7C7;
 }
 
+@media (max-width: 1388px) {
+  .product .block {
+    width: 400px;
+  }
+}
+
 @media (max-width: 1225px) {
   .programmer__inner {
     overflow: hidden;
@@ -655,6 +662,9 @@ body.lock {
   }
   .reason__block1::after, .reason__block2::before {
     display: none;
+  }
+  .reason__block3 {
+    background: none;
   }
 }
 
