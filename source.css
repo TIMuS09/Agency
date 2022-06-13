@@ -530,8 +530,12 @@ body.lock {
 }
 
 .reason__subtitles-happy {
-  padding: 16px;
+  width: 58px;
+  height: 58px;
   border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .reason__subtitles-info {
@@ -629,7 +633,7 @@ body.lock {
 }
 
 .reason__block3 {
-  background-image: url("/img/08.svg");
+  background-image: url("./img/08.svg");
   background-repeat: no-repeat;
   background-position: right;
 }

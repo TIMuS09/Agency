@@ -31,6 +31,10 @@
     border-radius: 20px;
     margin-right: 16px;
 }
+@mixin happy {
+    width: 58px;
+    height: 58px;
+}
 //------------------------
 
 // Переменные
@@ -224,8 +228,11 @@ body {
         display: flex;
         margin-bottom: 45px;
         &-happy {
-            padding: 16px;
+            @include happy;
             border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         &-info {
             margin-left: 25px;
@@ -309,7 +316,7 @@ body {
             }
         }
         &3 {
-            background-image: url('/img/08.svg');
+            background-image: url('./img/08.svg');
             background-repeat: no-repeat;
             background-position: right;
             .reason__subtitles-happy {
