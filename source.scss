@@ -150,7 +150,7 @@ body {
 
 .product {
     &__inner {
-        padding: 43px 70px 3px 81px;
+        padding: 43px 80px 3px 80px;
     }
     .title {
         font-weight: 550;
@@ -166,11 +166,11 @@ body {
         display: flex;
         align-items: center;
         margin-bottom: 40px;
-        width: 300px;
+        width: 267px;
     }
     &__apps {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-between;
         flex-wrap: wrap;
     }
     .web-apps-img {
@@ -200,7 +200,7 @@ body {
 
 .reason {
     &__inner {
-        padding: 115px 100px 115px 86px;
+        padding: 115px 100px 115px 91px;
     }
     &__info {
         margin-bottom: 155px;
@@ -226,7 +226,7 @@ body {
     }
     &__subtitles {
         display: flex;
-        margin-bottom: 45px;
+        margin-bottom: 43px;
         &-happy {
             @include happy;
             border-radius: 50%;
@@ -429,7 +429,7 @@ body {
             align-items: center;
         }
         &__inner {
-            padding: 41px 180px 115px 273px;
+            padding: 41px 0 115px 0;
         }
         &__block1,
         &__block2 {
@@ -493,6 +493,9 @@ body {
             padding: 41px 27px 0 41px;
             
         }
+        .block {
+            width: 267px;
+        }
         .title {
             font-size: 16px;
             line-height: 24px;
@@ -513,16 +516,17 @@ body {
             align-items: center;
         }
         &__info {
+            margin-bottom: 53px;
             h2 {
                 font-size: 20px;
-                width: 250px;
+                margin-bottom: 24px;
             }
             p {
                 font-size: 15px;
-                width: 224px;
             }
         }
         &__subtitles {
+            align-items: center;
             &-info {
                 h2 {
                     max-width: 191px;
@@ -532,14 +536,21 @@ body {
                 }
             }
         }
-        &__block-title {
-            font-size: 20px;
-            max-width: 280px;
-            text-align: center;
+        &__block {
+            .reason__block-title {
+                font-size: 20px;
+                // max-width: 280px;
+                text-align: center;
+                margin-bottom: 29px;
+            }
+            .reason__block-text {
+                // max-width: 282px;
+                text-align: center;
+            }
         }
-        &__block-text {
-            max-width: 282px;
-            text-align: center;
+        &__block1,
+        &__block2 {
+            margin-bottom: 55px;
         }
     }
 }
