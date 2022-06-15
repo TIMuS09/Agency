@@ -495,7 +495,12 @@ body.lock {
   border-bottom: 0.7px solid #C7C7C7;
 }
 
+.reason {
+  overflow: hidden;
+}
+
 .reason__inner {
+  position: relative;
   padding: 115px 100px 115px 91px;
 }
 
@@ -583,7 +588,7 @@ body.lock {
 .reason__block1-img {
   position: relative;
   left: 50px;
-  max-width: 700px;
+  max-width: 670px;
 }
 
 .reason__block1-img img {
@@ -601,7 +606,7 @@ body.lock {
   background: radial-gradient(72.77% 72.77% at 50% 50%, #DED9FF 0%, rgba(255, 255, 255, 0) 75%);
   border-radius: 50%;
   position: absolute;
-  right: 0;
+  right: -250px;
 }
 
 .reason__block2 {
@@ -619,6 +624,11 @@ body.lock {
 .reason__block2-img {
   position: relative;
   left: -40px;
+  max-width: 600px;
+}
+
+.reason__block2-img img {
+  width: 100%;
 }
 
 .reason__block2::before {
@@ -797,7 +807,7 @@ body.lock {
     align-items: center;
   }
   .reason__inner {
-    padding: 23px 27px 115px 27px;
+    padding: 23px 0 115px 0;
     text-align: center;
     align-items: center;
   }
@@ -814,15 +824,15 @@ body.lock {
   .reason__subtitles {
     align-items: center;
   }
-  .reason__subtitles-info h2 {
-    max-width: 191px;
-  }
   .reason__subtitles-info p {
     display: none;
   }
+  .reason__subtitles-happy {
+    min-width: 58px;
+    min-height: 58px;
+  }
   .reason__block .reason__block-title {
     font-size: 20px;
-    text-align: center;
     margin-bottom: 29px;
   }
   .reason__block .reason__block-text {

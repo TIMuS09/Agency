@@ -199,7 +199,9 @@ body {
 }
 
 .reason {
+    overflow: hidden;
     &__inner {
+        position: relative;
         padding: 115px 100px 115px 91px;
     }
     &__info {
@@ -273,7 +275,7 @@ body {
             &-img {
                 position: relative;
                 left: 50px;
-                max-width: 700px;
+                max-width: 670px;
                 img {
                     width: 100%;
                 }
@@ -288,7 +290,7 @@ body {
                 background: radial-gradient(72.77% 72.77% at 50% 50%, #DED9FF 0%, rgba(255, 255, 255, 0) 75%);
                 border-radius: 50%;
                 position: absolute;
-                right: 0;
+                right: -250px;
             }
         }
         &2 {
@@ -303,6 +305,10 @@ body {
             &-img {
                 position: relative;
                 left: -40px;
+                max-width: 600px;
+                img {
+                    width: 100%;
+                }
             }
             &::before {
                 content: '';
@@ -511,7 +517,7 @@ body {
     }
     .reason {
         &__inner {
-            padding: 23px 27px 115px 27px;
+            padding: 23px 0 115px 0;
             text-align: center;
             align-items: center;
         }
@@ -528,23 +534,21 @@ body {
         &__subtitles {
             align-items: center;
             &-info {
-                h2 {
-                    max-width: 191px;
-                }
                 p {
                     display: none;
                 }
+            }
+            &-happy {
+                min-width: 58px;
+                min-height: 58px;
             }
         }
         &__block {
             .reason__block-title {
                 font-size: 20px;
-                // max-width: 280px;
-                text-align: center;
                 margin-bottom: 29px;
             }
             .reason__block-text {
-                // max-width: 282px;
                 text-align: center;
             }
         }
