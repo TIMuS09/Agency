@@ -339,6 +339,8 @@ body.lock {
   line-height: 60px;
   width: 593px;
   margin-bottom: 35px;
+  position: relative;
+  z-index: 5;
 }
 
 .programmer__info h1 span {
@@ -351,6 +353,8 @@ body.lock {
   color: #5C5C5C;
   width: 625px;
   margin-bottom: 94px;
+  position: relative;
+  z-index: 5;
 }
 
 .programmer__info-buttons {
@@ -595,6 +599,7 @@ body.lock {
 
 .reason__block1-img img {
   width: 100%;
+  min-width: 400px;
 }
 
 .reason__block1 .reason__subtitles-happy {
@@ -616,6 +621,7 @@ body.lock {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 180px;
+  position: relative;
 }
 
 .reason__block2-info {
@@ -634,6 +640,7 @@ body.lock {
 
 .reason__block2-img img {
   width: 100%;
+  min-width: 400px;
 }
 
 .reason__block2::before {
@@ -648,14 +655,23 @@ body.lock {
 }
 
 .reason__block3 {
-  background-image: url("./img/08.svg");
-  background-repeat: no-repeat;
-  background-position: right;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.reason__block3-info {
   max-width: 480px;
 }
 
 .reason__block3 .reason__subtitles-happy {
   background-color: #9208D3;
+}
+
+.reason__block3-img {
+  position: absolute;
+  top: -40px;
+  right: 0;
 }
 
 .reason::after {
@@ -683,8 +699,8 @@ body.lock {
   .reason__block1::after, .reason__block2::before {
     display: none;
   }
-  .reason__block3 {
-    background: none;
+  .reason__block3-img {
+    display: none;
   }
 }
 
@@ -758,9 +774,6 @@ body.lock {
   }
   .reason__info p {
     max-width: 421px;
-  }
-  .reason__block3 {
-    background: none;
   }
 }
 
